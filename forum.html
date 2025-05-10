@@ -2,19 +2,34 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Forum - École Pascal</title>
+  <title>Forum – École Pascal</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Forum de discussion</h1>
-  <form id="forumForm">
-    <input type="text" id="pseudo" placeholder="Votre nom" required>
-    <textarea id="message" placeholder="Votre message" required></textarea>
-    <button type="submit">Poster</button>
-  </form>
-  <ul id="forumMessages"></ul>
-  <a href="index.html">Accueil</a>
+  <header>
+    <img src="https://www.ecolepascal.fr/wp-content/uploads/2020/09/logo_pascal_blanc.svg" alt="Logo École Pascal">
+    <h1>Forum de discussion</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="signalements.html">Signalements</a>
+    <a href="forum.html">Forum</a>
+  </nav>
+
+  <main>
+    <form id="forumForm">
+      <input type="text" id="pseudo" placeholder="Votre nom" required>
+      <textarea id="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Poster</button>
+    </form>
+    <ul id="forumMessages"></ul>
+  </main>
+
+  <footer>
+    École Pascal – Projet pédagogique
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
-
