@@ -1,37 +1,39 @@
-/* STYLE GLOBAL - ÉCOLE PASCAL */
-
 body {
-  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f5f7fa;
   color: #003c6c;
 }
 
-/* EN-TÊTE */
-
-header {
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 3px solid #0171b6;
+/* BANNIÈRE EN HAUT */
+.hero-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 4px solid #0171b6;
 }
 
-header img {
-  height: 80px;
+/* EN-TÊTE */
+header {
+  text-align: center;
+  padding: 20px;
+  background: white;
+}
+
+.logo-accueil {
+  height: 120px;
   margin-bottom: 10px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 32px;
   color: #003c6c;
 }
 
 /* NAVIGATION */
-
 nav {
   background-color: #0171b6;
   display: flex;
@@ -51,8 +53,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* CONTENU PRINCIPAL */
-
+/* CONTENU */
 main {
   max-width: 800px;
   margin: 40px auto;
@@ -62,79 +63,17 @@ main {
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* FORMULAIRES */
-
-form label {
-  font-weight: bold;
-  display: block;
-  margin: 15px 0 5px;
-}
-
-form input[type="text"],
-form textarea,
-form input[type="file"] {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 16px;
-  box-sizing: border-box;
-}
-
-input[type="file"] {
-  background: #fff;
-}
-
-form button {
-  background-color: #003c6c;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px;
-}
-
-form button:hover {
-  background-color: #005ea3;
-}
-
-/* LISTES (signalements/forum) */
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  background: #eef3f9;
-  margin: 10px 0;
-  padding: 15px;
-  border-radius: 6px;
-  border-left: 5px solid #0171b6;
-}
-.hero-banner {
-  width: 100%;
-  max-height: 300px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 20px;
-  border-bottom: 4px solid #0171b6;
-}
-
-main button {
+.signalement-btn {
   background-color: #0171b6;
   color: white;
-  padding: 14px 24px;
-  font-size: 16px;
+  padding: 14px 30px;
+  font-size: 18px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  margin-top: 20px;
 }
 
-main button:hover {
+.signalement-btn:hover {
   background-color: #005999;
 }
