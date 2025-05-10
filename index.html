@@ -2,28 +2,40 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <title>Signalement - École Pascal</title>
+  <title>Signaler un objet cassé - École Pascal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Signaler un objet cassé</h1>
-  <form id="signalementForm">
-    <label for="objet">Objet cassé :</label>
-    <input type="text" id="objet" name="objet" required><br>
-    
-    <label for="lieu">Lieu :</label>
-    <input type="text" id="lieu" name="lieu" required><br>
-    
-    <label for="description">Description :</label><br>
-    <textarea id="description" name="description"></textarea><br>
-    
-    <button type="submit">Envoyer</button>
-  </form>
+  <header>
+    <img src="https://www.ecolepascal.fr/wp-content/uploads/2020/09/logo_pascal_blanc.svg" alt="Logo École Pascal">
+    <h1>Signaler un objet cassé</h1>
+  </header>
 
-  <a href="signalements.html">Voir les signalements</a> |
-  <a href="forum.html">Forum</a>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="signalements.html">Signalements</a>
+    <a href="forum.html">Forum</a>
+  </nav>
 
-  <script src="script.js"></script>
+  <main>
+    <form action="https://formsubmit.co/noah.page@ifea.education" method="POST">
+      <label for="objet">Objet cassé :</label>
+      <input type="text" id="objet" name="objet" required>
+
+      <label for="lieu">Lieu :</label>
+      <input type="text" id="lieu" name="lieu" required>
+
+      <label for="description">Description :</label>
+      <textarea id="description" name="description"></textarea>
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="merci.html">
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer>
+    École Pascal – Projet pédagogique
+  </footer>
 </body>
 </html>
-
