@@ -115,3 +115,26 @@ li {
   border-radius: 6px;
   border-left: 5px solid #0171b6;
 }
+.hero-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #0171b6;
+}
+
+main button {
+  background-color: #0171b6;
+  color: white;
+  padding: 14px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+main button:hover {
+  background-color: #005999;
+}
